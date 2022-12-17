@@ -5,7 +5,7 @@ body {
 }
 .left-side {
   position: absolute;
-  width: 240px;
+  width: 12%;
   height: 100%;
   left: 0%;
   top: 0%;
@@ -45,7 +45,7 @@ body {
   height: 94%;
   gap: 15%;
 }
-#list {
+#project-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,7 +59,7 @@ body {
 /*?DARK MODE*/
 .dark-mode {
   background-color: #2b2e4a;
-  color: aliceblue;
+  color: white;
 }
 .dark-left-side {
   background: #53354a;
@@ -78,20 +78,6 @@ body {
 }
 
 /*?OTHER*/
-button {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  background: #dae2b6;
-  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
-  padding: 5px;
-}
-button:hover {
-  cursor: pointer;
-  background: #2b2e4a;
-}
-
 .light {
   position: absolute;
   top: 95%;
@@ -103,7 +89,7 @@ button:hover {
   left: 95%;
 }
 
-#list:hover {
+#project-list:hover {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;

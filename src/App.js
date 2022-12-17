@@ -3,7 +3,6 @@ import css from "./app.css";
 import Presentation from "./components/Presentation";
 import Focus from "./components/Focus";
 import List from "./components/List";
-import { FOCUSABLE_SELECTOR } from "@testing-library/user-event/dist/utils";
 
 function App(props) {
   const allProjects = props.projectsDB;
@@ -19,7 +18,7 @@ function App(props) {
       document
         .getElementById("project-array-background")
         .classList.remove("dark-right-side");
-      document.getElementById("list").classList.remove("dark-list");
+      document.getElementById("project-list").classList.remove("dark-list");
     } else {
       document.body.classList.add("dark-mode");
       document.getElementById("presentation").classList.add("dark-left-side");
@@ -27,7 +26,7 @@ function App(props) {
       document
         .getElementById("project-array-background")
         .classList.add("dark-right-side");
-      document.getElementById("list").classList.add("dark-list");
+      document.getElementById("project-list").classList.add("dark-list");
     }
   }
   function handleFocus(choice) {
@@ -36,7 +35,11 @@ function App(props) {
 
   return (
     <div>
-      <button className="light" onClick={() => handleMode("light")}>
+      <button
+        type="radio"
+        className="light"
+        onClick={() => handleMode("light")}
+      >
         Light mode
       </button>
       <button className="dark" onClick={() => handleMode("dark")}>
@@ -45,7 +48,7 @@ function App(props) {
       <div className="App">
         <Presentation />
         <Focus focus={focusOnProject} />
-        <List list={listOfProject} />
+        <List DB={allProjects} focus={handleFocus} />
       </div>
     </div>
   );

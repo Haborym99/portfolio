@@ -1,6 +1,10 @@
 export default function List(props) {
-  const listOfProject = allProjects.map((project) => (
-    <li key={project.key} onClick={() => handleFocus(project)} id="list">
+  const listOfProject = props.DB.map((project) => (
+    <li
+      key={project.key}
+      onClick={() => props.focus(project)}
+      id="project-list"
+    >
       {project.name}
     </li>
   ));
