@@ -1,8 +1,130 @@
-* {
-  background-color: white;
+/*?LIGHT MODE*/
+body {
+  background-color: #f4ead5;
   color: black;
 }
+.left-side {
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background: #dae2b6;
+  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.left-side > p {
+  margin: 5px;
+}
+.center {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  left: 15%;
+  right: 25%;
+  background: #ccd6a6;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+#project-div {
+  position: absolute;
+  right: 5px;
+  background: transparent;
+  z-index: -1;
+  width: 12%;
+  height: 95%;
+}
+#project-array-background {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 94%;
+  gap: 15%;
+}
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #dae2b6;
+  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 100%;
+  cursor: pointer;
+}
 
+/*?DARK MODE*/
+.dark-mode {
+  background-color: #2b2e4a;
+  color: aliceblue;
+}
+.dark-left-side {
+  background: #53354a;
+}
+.dark-center {
+  background: #903749;
+  border: 1px solid #000000;
+  box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.25);
+}
+.dark-right-side {
+  background: #2b2e4a;
+}
+.dark-list {
+  background: #53354a;
+  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*?OTHER*/
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background: #dae2b6;
+  box-shadow: 15px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
 button:hover {
   cursor: pointer;
+  background: #2b2e4a;
+}
+
+.light {
+  position: absolute;
+  top: 95%;
+  left: 90%;
+}
+.dark {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+}
+
+#list:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
