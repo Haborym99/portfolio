@@ -5,9 +5,8 @@ export default function Focus(props) {
     </div>
   );
   const bigView = (
-    <div id="focus-big" className="center">
-      <h2>Focus on: {props.name}</h2>
-      <img src={props.img} alt={props.name}></img>
+    <div id="focus" className="center">
+      <iframe id="big-focus" src={props.link} title={props.name}></iframe>
     </div>
   );
   return smallView;

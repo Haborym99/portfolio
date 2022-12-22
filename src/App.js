@@ -1,5 +1,5 @@
-import { useState } from "react";
-import css from "./app.css";
+import { React, useState } from "react";
+import css from "./App.css";
 import Presentation from "./components/Presentation";
 import Focus from "./components/Focus";
 import List from "./components/List";
@@ -40,7 +40,6 @@ function App(props) {
     setImg(choice.image);
     setLink(choice.link);
   }
-
   return (
     <div>
       <div className="App">

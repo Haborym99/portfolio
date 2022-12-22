@@ -12,12 +12,33 @@ body {
   box-shadow: inset -15px 15px 50px #aeb592, inset 15px -15px 50px #ffffda;
   border-radius: 0 10px 10px 0px;
   border: 1px solid #00000050;
+  overflow: auto;
+  text-align: center;
 }
-.left-side > p {
-  padding-left: 5px;
+.left-side-big {
+  position: absolute;
+  width: 50%;
+  height: 98%;
+  left: 0%;
+  background: #dae2b6;
+  box-shadow: 30px 0px 500px black;
+  border-radius: 0 10px 10px 0px;
+  border: 1px solid #00000050;
+  overflow: auto;
+  z-index: 2;
+  text-align: center;
 }
-.left-side > h2 {
-  padding-left: 5px;
+.about-me {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#contact-big li {
+  display: inline;
+  width: fit-content;
+  margin: 0 10% 0 10%;
+}
+#contact-big li:hover {
+  cursor: pointer;
 }
 .center {
   position: absolute;
@@ -26,7 +47,7 @@ body {
   left: 15%;
   right: 25%;
   background: transparent;
-  z-index: 10;
+  z-index: 1;
   border-radius: 10px;
   box-shadow: 20px 0px 20px #00000050, -20px 0px 20px #00000040;
 }
@@ -217,7 +238,7 @@ body {
 /*?Custom br*/
 .br {
   display: block;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
 
 #small-focus {
@@ -225,4 +246,62 @@ body {
   width: 100%;
   border-radius: 10px;
   border: none;
+}
+ul {
+  list-style: none;
+  font-weight: bolder;
+  padding: 0;
+}
+#sub-list {
+  font-size: small;
+  font-weight: 500;
+  list-style: square;
+  list-style-position: outside;
+}
+.container-list {
+  position: relative;
+  width: 40%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #00000020;
+  border-radius: 0 10px 10px 0;
+  z-index: -10;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5551;
+}
+@media screen and (max-height: 675px) {
+  .center {
+    width: 50%;
+    left: 29%;
+  }
+  .left-side {
+    width: 20%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00000020;
+    border-radius: 0 10px 10px 0;
+    z-index: -10;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5551;
+  }
 }
