@@ -3,6 +3,8 @@ import linkedin from "./src/linkedin.svg";
 import github from "./src/github.svg";
 import email from "./src/email.svg";
 import phone from "./src/phone.svg";
+import bigger from "./src/big.svg";
+import reduce from "./src/small.svg";
 
 export default function Presentation(props) {
   const [size, setSize] = useState("small");
@@ -15,33 +17,94 @@ export default function Presentation(props) {
           <br />
           I'm Tristan Collon, a self-taught frontend developer.
           <span className="br"></span>
-          <h2>Certifications:</h2>
-          (300h + each you can find them here)
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Frontend librairies</li>
-          </ul>
-          <br />
-          My tech stack:
         </p>
+        <h2>Certifications:</h2>
+        <p>(300h + each you can find them here)</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/certification/Squaredius/responsive-web-design"
+              target="_blank"
+              style={{ color: "inherit" }}
+            >
+              HTML/CSS
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/certification/Squaredius/javascript-algorithms-and-data-structures"
+              target="_blank"
+              style={{ color: "inherit" }}
+            >
+              JavaScript
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/certification/Squaredius/front-end-development-libraries"
+              target="_blank"
+              style={{ color: "inherit" }}
+            >
+              Frontend librairies
+            </a>
+          </li>
+        </ul>
+        <br />
+        <p>Actually I'm using:</p>
         <ul>
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
-          <li>Redux</li>
-          <li>Sass</li>
-          <li>jQuery</li>
         </ul>
       </div>
       <h2>To contact me:</h2>
-      <div className="contact">
-        <p>Here's all my social link:</p>
+      <div id="contact-small">
         <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
-          <li>Email</li>
-          <li>Phone</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tristan-collon/"
+              target="_blank"
+            >
+              <img
+                className="contact-small-logo"
+                src={linkedin}
+                style={{
+                  width: "20px",
+                }}
+                alt="linkedin logo"
+              ></img>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Haborym99" target="_blank">
+              <img
+                className="contact-small-logo"
+                src={github}
+                style={{ width: "20px" }}
+                alt="github logo"
+              ></img>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tristan.collon@outlook.com">
+              <img
+                className="contact-small-logo"
+                src={email}
+                style={{ width: "20px" }}
+                alt="email logo"
+              ></img>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+330637874588">
+              <img
+                className="contact-small-logo"
+                src={phone}
+                style={{ width: "20px" }}
+                alt="phone logo"
+              ></img>
+            </a>
+          </li>
         </ul>
       </div>
       <div id="mode">
@@ -59,14 +122,13 @@ export default function Presentation(props) {
         >
           Dark mode
         </button>
-        <button
-          type="button"
-          id="center-big-button"
-          onClick={() => setSize("big")}
-        >
-          Click here for more information
-        </button>
       </div>
+      <img
+        id="bigger-button"
+        src={bigger}
+        style={{ width: "25px" }}
+        onClick={() => setSize("big")}
+      ></img>
     </div>
   );
 
@@ -86,13 +148,15 @@ export default function Presentation(props) {
           <br />
           In addition to technology, I also love taking photos, playing video
           games, travelling, listening to music, running, lifting weight.
-          <h2>Any degree?</h2>
-          Only a bachelor degree but, I have certifications for web development
-          and frontend development from freeCodeCamp, each of them asked about
+        </p>
+        <h2>Any degree?</h2>
+        <p>
+          A bachelor degree plus, certifications for web development and
+          frontend development from freeCodeCamp, each of them asked about
           approximately 300h or more.
           <br />
-          Now I'll give you a link to see each certifications plus a list of
-          things that I learned with those certifications
+          You'll find links to see each certifications plus a list of things
+          that I learned with those certifications
         </p>
         <span className="br"></span>
         <ul>
@@ -164,7 +228,7 @@ export default function Presentation(props) {
         <h2>What I am actually doing?</h2>
         <p>
           Actually I am learning TypeScript, remaking old projects, and looking
-          to create a high-end restaurant menu
+          to create a high-end restaurant menu.
         </p>
       </div>
       <h2>If you have any question:</h2>
@@ -232,14 +296,13 @@ export default function Presentation(props) {
         >
           Dark mode
         </button>
-        <button
-          type="button"
-          id="center-big-button"
-          onClick={() => setSize("small")}
-        >
-          Click here for less information
-        </button>
       </div>
+      <img
+        id="smaller-button"
+        src={reduce}
+        style={{ width: "25px" }}
+        onClick={() => setSize("small")}
+      ></img>
     </div>
   );
 

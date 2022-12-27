@@ -32,6 +32,14 @@ body {
   padding-left: 10%;
   padding-right: 10%;
 }
+#contact-small li {
+  display: inline;
+  width: fit-content;
+  margin: 0 5% 0 5%;
+}
+#contact-small li:hover {
+  cursor: pointer;
+}
 #contact-big li {
   display: inline;
   width: fit-content;
@@ -255,7 +263,7 @@ ul {
 #sub-list {
   font-size: small;
   font-weight: 500;
-  list-style: square;
+  list-style: none;
   list-style-position: outside;
 }
 .container-list {
@@ -267,6 +275,19 @@ ul {
   left: 0;
   margin: auto;
 }
+#bigger-button {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin: auto;
+}
+#smaller-button {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin: auto;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -281,7 +302,7 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #5551;
 }
-@media screen and (max-height: 675px) {
+@media screen and ((max-width: 1600px)) {
   .center {
     width: 50%;
     left: 29%;

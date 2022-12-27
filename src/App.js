@@ -24,7 +24,7 @@ function App(props) {
       document
         .getElementById("project-div")
         .classList.remove("dark-project-div");
-    } else {
+    } else if (props === "dark") {
       setMode("dark");
       document.body.classList.add("dark-mode");
       document.getElementById("presentation").classList.add("dark-left-side");
