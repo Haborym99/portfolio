@@ -14,9 +14,6 @@ function App(props) {
     if (props === "light") {
       setMode("light");
       document.body.classList.remove("dark-mode");
-      document
-        .getElementById("presentation")
-        .classList.remove("dark-left-side");
       document.getElementById("focus").classList.remove("dark-center");
       document
         .getElementById("project-array-background")
@@ -27,7 +24,6 @@ function App(props) {
     } else {
       setMode("dark");
       document.body.classList.add("dark-mode");
-      document.getElementById("presentation").classList.add("dark-left-side");
       document.getElementById("focus").classList.add("dark-center");
       document
         .getElementById("project-array-background")
