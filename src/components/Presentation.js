@@ -25,6 +25,7 @@ export default function Presentation(props) {
             <a
               href="https://www.freecodecamp.org/certification/Squaredius/responsive-web-design"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "inherit" }}
             >
               HTML/CSS
@@ -34,6 +35,7 @@ export default function Presentation(props) {
             <a
               href="https://www.freecodecamp.org/certification/Squaredius/javascript-algorithms-and-data-structures"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "inherit" }}
             >
               JavaScript
@@ -43,6 +45,7 @@ export default function Presentation(props) {
             <a
               href="https://www.freecodecamp.org/certification/Squaredius/front-end-development-libraries"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "inherit" }}
             >
               Frontend librairies
@@ -64,6 +67,7 @@ export default function Presentation(props) {
             <a
               href="https://www.linkedin.com/in/tristan-collon/"
               target="_blank"
+              rel="linkedin"
             >
               <img
                 className="contact-small-logo"
@@ -71,17 +75,17 @@ export default function Presentation(props) {
                 style={{
                   width: "20px",
                 }}
-                alt="linkedin logo"
+                alt="noopener noreferrer"
               ></img>
             </a>
           </li>
           <li>
-            <a href="https://github.com/Haborym99" target="_blank">
+            <a href="https://github.com/Haborym99" target="_blank" rel="github">
               <img
                 className="contact-small-logo"
                 src={github}
                 style={{ width: "20px" }}
-                alt="github logo"
+                alt="noopener noreferrer"
               ></img>
             </a>
           </li>
@@ -165,6 +169,7 @@ export default function Presentation(props) {
               href="https://www.freecodecamp.org/certification/Squaredius/responsive-web-design"
               target="_blank"
               style={{ color: "inherit" }}
+              rel="noopener noreferrer"
             >
               HTML/CSS
             </a>
@@ -185,6 +190,7 @@ export default function Presentation(props) {
               href="https://www.freecodecamp.org/certification/Squaredius/javascript-algorithms-and-data-structures"
               target="_blank"
               style={{ color: "inherit" }}
+              rel="noopener noreferrer"
             >
               JavaScript
             </a>
@@ -204,6 +210,7 @@ export default function Presentation(props) {
               href="https://www.freecodecamp.org/certification/Squaredius/front-end-development-libraries"
               target="_blank"
               style={{ color: "inherit" }}
+              rel="noopener noreferrer"
             >
               Frontend librairies
             </a>
@@ -238,6 +245,7 @@ export default function Presentation(props) {
             <a
               href="https://www.linkedin.com/in/tristan-collon/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="contact-big-logo"
@@ -250,7 +258,11 @@ export default function Presentation(props) {
             </a>
           </li>
           <li>
-            <a href="https://github.com/Haborym99" target="_blank">
+            <a
+              href="https://github.com/Haborym99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="contact-big-logo"
                 src={github}
