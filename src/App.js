@@ -24,7 +24,7 @@ function App(props) {
       document
         .getElementById("project-div")
         .classList.remove("dark-project-div");
-    } else if (props === "dark") {
+    } else {
       setMode("dark");
       document.body.classList.add("dark-mode");
       document.getElementById("presentation").classList.add("dark-left-side");
@@ -43,7 +43,7 @@ function App(props) {
   return (
     <div>
       <div className="App">
-        <Presentation handleMode={handleMode} />
+        <Presentation handleMode={handleMode} mode={mode} setMode={setMode} />
         <Focus name={focusOnProject} img={prjctImg} link={prjctLink} />
         <List DB={allProjects} focus={handleFocus} theme={mode} />
       </div>

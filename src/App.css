@@ -281,11 +281,17 @@ ul {
   top: 0%;
   margin: auto;
 }
+#bigger-button:hover {
+  cursor: pointer;
+}
 #smaller-button {
   position: absolute;
   right: 0%;
   top: 0%;
   margin: auto;
+}
+#smaller-button:hover {
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
