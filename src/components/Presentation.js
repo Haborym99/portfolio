@@ -67,7 +67,7 @@ export default function Presentation(props) {
             <a
               href="https://www.linkedin.com/in/tristan-collon/"
               target="_blank"
-              rel="linkedin"
+              rel="noopener noreferrer"
             >
               <img
                 className="contact-small-logo"
@@ -80,7 +80,11 @@ export default function Presentation(props) {
             </a>
           </li>
           <li>
-            <a href="https://github.com/Haborym99" target="_blank" rel="github">
+            <a
+              href="https://github.com/Haborym99"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="contact-small-logo"
                 src={github}
@@ -132,6 +136,7 @@ export default function Presentation(props) {
         src={bigger}
         style={{ width: "25px" }}
         onClick={() => setSize("big")}
+        alt="increase presentation window"
       ></img>
     </div>
   );
@@ -314,6 +319,7 @@ export default function Presentation(props) {
         src={reduce}
         style={{ width: "25px" }}
         onClick={() => setSize("small")}
+        alt="decrease presentation window"
       ></img>
     </div>
   );
