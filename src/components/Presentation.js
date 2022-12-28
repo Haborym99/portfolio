@@ -274,7 +274,7 @@ export default function Presentation(props) {
   );
 
   const bigView = (
-    <div id="presentation" className="left-side-big">
+    <div id="presentation" className="left-side-big slide-right">
       <h2>Who I am?</h2>
       <div className="about-me">
         <p>
@@ -456,7 +456,7 @@ export default function Presentation(props) {
     </div>
   );
   const bigViewDark = (
-    <div id="presentation" className="left-side-big dark-left-side">
+    <div id="presentation" className="left-side-big dark-left-side slide-right">
       <h2>Who I am?</h2>
       <div className="about-me">
         <p>
