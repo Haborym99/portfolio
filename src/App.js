@@ -18,9 +18,6 @@ function App(props) {
       document
         .getElementById("project-array-background")
         .classList.remove("dark-right-side");
-      document
-        .getElementById("project-div")
-        .classList.remove("dark-project-div");
     } else {
       setMode("dark");
       document.body.classList.add("dark-mode");
@@ -29,7 +26,6 @@ function App(props) {
         .getElementById("project-array-background")
         .classList.add("dark-right-side");
     }
-    document.getElementById("project-div").classList.add("dark-project-div");
   }
   function handleFocus(choice) {
     setFocus(choice.name);
