@@ -138,6 +138,11 @@ export default function Presentation(props) {
         onClick={() => setSize("big")}
         alt="increase presentation window"
       ></img>
+      <p
+        style={{ position: "absolute", bottom: "0%", left: "0%", right: "0%" }}
+      >
+        &copy; Tristan Collon
+      </p>
     </div>
   );
   const smallViewDark = (
@@ -270,6 +275,11 @@ export default function Presentation(props) {
         onClick={() => setSize("big")}
         alt="increase presentation window"
       ></img>
+      <p
+        style={{ position: "absolute", bottom: "0%", left: "0%", right: "0%" }}
+      >
+        &copy; Tristan Collon
+      </p>
     </div>
   );
 
@@ -445,6 +455,16 @@ export default function Presentation(props) {
         >
           Dark mode
         </button>
+        <p
+          style={{
+            position: "absolute",
+            bottom: "0%",
+            left: "0%",
+            right: "0%",
+          }}
+        >
+          &copy; Tristan Collon
+        </p>
       </div>
       <img
         id="smaller-button"
@@ -627,6 +647,16 @@ export default function Presentation(props) {
         >
           Dark mode
         </button>
+        <p
+          style={{
+            position: "absolute",
+            bottom: "0%",
+            left: "0%",
+            right: "0%",
+          }}
+        >
+          &copy; Tristan Collon
+        </p>
       </div>
       <img
         id="smaller-button"

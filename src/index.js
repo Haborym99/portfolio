@@ -4,6 +4,7 @@ import App from "./App";
 import Calculator from "./components/src/calculator.png";
 import Markdown from "./components/src/markdown_prw.png";
 import Drums from "./components/src/drums.png";
+import Quotations from "./components/src/quotations.PNG";
 
 const DATA = [
   {
@@ -26,6 +27,13 @@ const DATA = [
     name: "Drums machine",
     image: Drums,
     link: "https://haborym99.github.io/drum_machine/",
+  },
+  {
+    id: 4,
+    key: 4,
+    name: "Quote generator",
+    image: Quotations,
+    link: "https://haborym99.github.io/Quote_Generator/",
   },
 ];
 const root = ReactDOM.createRoot(document.getElementById("root"));

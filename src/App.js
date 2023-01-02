@@ -35,7 +35,12 @@ function App(props) {
   return (
     <div>
       <div className="App">
-        <Presentation handleMode={handleMode} mode={mode} setMode={setMode} />
+        <Presentation
+          handleMode={handleMode}
+          mode={mode}
+          setMode={setMode}
+          CSS={css}
+        />
         <Focus name={focusOnProject} img={prjctImg} link={prjctLink} />
         <List DB={allProjects} focus={handleFocus} theme={mode} />
       </div>
