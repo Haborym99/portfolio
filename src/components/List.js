@@ -36,9 +36,6 @@ export default function List(props) {
       setLimiteStart(limiteStart - 3);
       setLimiteEnd(limiteEnd - 3);
     }
-    console.log(limiteStart);
-    console.log(limiteEnd);
-    console.log(event);
   }
   const smallView = (
     <div id="project-div">
