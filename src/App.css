@@ -100,13 +100,12 @@ body {
 }
 #img-list {
   position: relative;
-  width: auto;
-  max-height: 100%;
   max-width: 100%;
   border-radius: 10px 10px 0 0;
-  overflow: hidden;
   align-self: center;
   height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 /*?DARK MODE*/

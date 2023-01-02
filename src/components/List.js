@@ -5,7 +5,7 @@ export default function List(props) {
   const [limiteStart, setLimiteStart] = useState(0);
   const [limiteEnd, setLimiteEnd] = useState(3);
   const projectArr = props.DB.filter(
-    (project) => project.id > limiteStart && project.id <= limiteEnd
+    (project) => project.key > limiteStart && project.key <= limiteEnd
   ).map((project) => (
     <li
       key={project.key}
@@ -17,7 +17,7 @@ export default function List(props) {
     </li>
   ));
   const projectArrDark = props.DB.filter(
-    (project) => project.id > limiteStart && project.id <= limiteEnd
+    (project) => project.key > limiteStart && project.key <= limiteEnd
   ).map((project) => (
     <li
       key={project.key}
