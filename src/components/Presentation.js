@@ -58,6 +58,9 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
+          <li>Node.js</li>
+          <li>Figma</li>
+          <li>Notion</li>
         </ul>
       </div>
       <h2>To contact me:</h2>
@@ -139,7 +142,12 @@ export default function Presentation(props) {
         alt="increase presentation window"
       ></img>
       <p
-        style={{ position: "absolute", bottom: "0%", left: "0%", right: "0%" }}
+        style={{
+          position: "absolute",
+          top: "100%",
+          left: "0%",
+          right: "0%",
+        }}
       >
         &copy; Tristan Collon
       </p>
@@ -195,6 +203,9 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
+          <li>Node.js</li>
+          <li>Figma</li>
+          <li>Notion</li>
         </ul>
       </div>
       <h2>To contact me:</h2>
@@ -275,9 +286,7 @@ export default function Presentation(props) {
         onClick={() => setSize("big")}
         alt="increase presentation window"
       ></img>
-      <p
-        style={{ position: "absolute", bottom: "0%", left: "0%", right: "0%" }}
-      >
+      <p style={{ position: "absolute", top: "100%", left: "0%", right: "0%" }}>
         &copy; Tristan Collon
       </p>
     </div>
@@ -378,11 +387,14 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
+          <li>Node.js</li>
+          <li>Figma</li>
+          <li>Notion</li>
         </ul>
         <h2>What I am actually doing?</h2>
         <p>
-          Actually I am learning TypeScript, remaking old projects, and looking
-          to create a high-end restaurant menu.
+          Once my portfolio done I will learn TypeScript, remake old projects,
+          and looking to create a high-end restaurant menu.
         </p>
       </div>
       <h2>If you have any question:</h2>
@@ -458,7 +470,7 @@ export default function Presentation(props) {
         <p
           style={{
             position: "absolute",
-            bottom: "0%",
+            top: "100%",
             left: "0%",
             right: "0%",
           }}
@@ -570,11 +582,14 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
+          <li>Node.js</li>
+          <li>Figma</li>
+          <li>Notion</li>
         </ul>
         <h2>What I am actually doing?</h2>
         <p>
-          Actually I am learning TypeScript, remaking old projects, and looking
-          to create a high-end restaurant menu.
+          Once my portfolio done I will learn TypeScript, remake old projects,
+          and looking to create a high-end restaurant menu.
         </p>
       </div>
       <h2>If you have any question:</h2>
@@ -650,7 +665,7 @@ export default function Presentation(props) {
         <p
           style={{
             position: "absolute",
-            bottom: "0%",
+            top: "100%",
             left: "0%",
             right: "0%",
           }}
