@@ -1,7 +1,9 @@
 import forward from "./src/forward.svg";
 import backward from "./src/backward.svg";
+import bigger from "./src/big.svg";
 import { useState } from "react";
 export default function List(props) {
+  const [size, setSize] = useState("small");
   const [limiteStart, setLimiteStart] = useState(0);
   const [limiteEnd, setLimiteEnd] = useState(3);
   const projectArr = props.DB.filter(
@@ -25,6 +27,27 @@ export default function List(props) {
       id="project-list-dark"
     >
       <img id="img-list" src={project.image} alt={project.name}></img>
+      <p>{project.name}</p>
+    </li>
+  ));
+
+  const bigProjectArr = props.DB.map((project) => (
+    <li
+      key={project.key}
+      onClick={() => props.focus(project)}
+      id="big-project-list"
+    >
+      <img id="big-img-list" src={project.image} alt={project.name}></img>
+      <p>{project.name}</p>
+    </li>
+  ));
+  const bigProjectArrDark = props.DB.map((project) => (
+    <li
+      key={project.key}
+      onClick={() => props.focus(project)}
+      id="big-project-list-dark"
+    >
+      <img id="big-img-list" src={project.image} alt={project.name}></img>
       <p>{project.name}</p>
     </li>
   ));
@@ -52,6 +75,12 @@ export default function List(props) {
         alt="previous-page"
         onClick={handlePages}
       ></img>
+      <img
+        id="project-big-button"
+        src={bigger}
+        alt="increase the size"
+        onClick={() => setSize("big")}
+      ></img>
     </div>
   );
 
@@ -70,12 +99,45 @@ export default function List(props) {
         alt="previous-page"
         onClick={handlePages}
       ></img>
+      <img
+        id="project-big-button"
+        src={bigger}
+        alt="increase the size"
+        onClick={() => setSize("big")}
+      ></img>
     </div>
   );
 
-  if (props.theme === "light") {
+  const bigView = (
+    <div id="big-view-project" onClick={() => setSize("small")}>
+      <h2>Here's all the project I made:</h2>
+      <ul id="big-view-project-list">{bigProjectArr}</ul>
+      <img
+        id="project-big-button"
+        src={bigger}
+        onClick={() => setSize("small")}
+      ></img>
+    </div>
+  );
+  const bigViewDark = (
+    <div id="big-view-project-dark" onClick={() => setSize("small")}>
+      <h2>Here's all the project I made:</h2>
+      <ul id="big-view-project-list-dark">{bigProjectArrDark}</ul>
+      <img
+        id="project-big-button"
+        src={bigger}
+        onClick={() => setSize("small")}
+      ></img>
+    </div>
+  );
+
+  if (size === "small" && props.theme === "light") {
     return smallView;
-  } else if (props.theme === "dark") {
+  } else if (size === "small" && props.theme === "dark") {
     return smallDarkView;
+  } else if (size === "big" && props.theme === "light") {
+    return bigView;
+  } else {
+    return bigViewDark;
   }
 }

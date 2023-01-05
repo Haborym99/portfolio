@@ -21,7 +21,7 @@ body {
   height: 98%;
   left: 0%;
   background: #dae2b6;
-  box-shadow: 30px 0px 500px black;
+  box-shadow: 100px 0px 100em black;
   border-radius: 0 10px 10px 0px;
   border: 1px solid #00000050;
   overflow: auto;
@@ -78,6 +78,7 @@ body {
   width: 90%;
   height: 90%;
   gap: 5%;
+  top: 2.5%;
 }
 #project-list {
   display: flex;
@@ -106,6 +107,45 @@ body {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+#big-view-project {
+  z-index: 2;
+  position: absolute;
+  width: 60%;
+  height: 98%;
+  right: 0%;
+  background: #dae2b6;
+  border: 1px solid #00000050;
+  overflow: auto;
+  text-align: center;
+  box-shadow: -100px 0px 100em black;
+  border-radius: 10px 0 0 10px;
+}
+#big-view-project-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 5%;
+  height: 80%;
+  margin: auto;
+}
+#big-project-list {
+  width: 25%;
+  height: 50%;
+  margin: auto;
+  border-radius: 10px;
+  background: #f4ead5;
+  cursor: pointer;
+}
+#big-img-list {
+  position: relative;
+  width: 100%;
+  align-self: center;
+  height: 80%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 /*?DARK MODE*/
@@ -153,6 +193,36 @@ body {
   z-index: 1;
   height: 40px;
   padding-top: 10px;
+}
+
+#big-view-project-dark {
+  z-index: 2;
+  position: absolute;
+  width: 60%;
+  height: 98%;
+  right: 0%;
+  background: #903749;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #00000050;
+  overflow: auto;
+  text-align: center;
+  box-shadow: -100px 0px 100em black;
+}
+#big-view-project-list-dark {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 5%;
+  height: 80%;
+  margin: auto;
+}
+#big-project-list-dark {
+  width: 25%;
+  height: 50%;
+  margin: auto;
+  border-radius: 10px;
+  background: #53354a;
+  cursor: pointer;
 }
 
 /*?OTHER*/
@@ -245,6 +315,16 @@ ul {
   margin: auto;
 }
 #smaller-button:hover {
+  cursor: pointer;
+}
+
+#project-big-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: scaleX(-1);
+}
+#project-big-button:hover {
   cursor: pointer;
 }
 
