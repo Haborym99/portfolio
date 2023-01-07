@@ -1,6 +1,7 @@
 import forward from "./src/forward.svg";
 import backward from "./src/backward.svg";
 import bigger from "./src/big.svg";
+import small from "./src/small.svg";
 import { useState } from "react";
 export default function List(props) {
   const [size, setSize] = useState("small");
@@ -34,7 +35,7 @@ export default function List(props) {
   const bigProjectArr = props.DB.map((project) => (
     <li
       key={project.key}
-      onClick={() => props.focus(project)}
+      onClick={() => props.focus(project) + setSize("small")}
       id="big-project-list"
     >
       <img id="big-img-list" src={project.image} alt={project.name}></img>
@@ -44,7 +45,7 @@ export default function List(props) {
   const bigProjectArrDark = props.DB.map((project) => (
     <li
       key={project.key}
-      onClick={() => props.focus(project)}
+      onClick={() => props.focus(project) + setSize("small")}
       id="big-project-list-dark"
     >
       <img id="big-img-list" src={project.image} alt={project.name}></img>
@@ -109,23 +110,23 @@ export default function List(props) {
   );
 
   const bigView = (
-    <div id="big-view-project" onClick={() => setSize("small")}>
-      <h2>Here's all the project I made:</h2>
+    <div id="big-view-project" className="slide-left">
+      <h2>Here's all the projects I made:</h2>
       <ul id="big-view-project-list">{bigProjectArr}</ul>
       <img
         id="project-big-button"
-        src={bigger}
+        src={small}
         onClick={() => setSize("small")}
       ></img>
     </div>
   );
   const bigViewDark = (
-    <div id="big-view-project-dark" onClick={() => setSize("small")}>
+    <div id="big-view-project-dark" className="slide-left">
       <h2>Here's all the project I made:</h2>
       <ul id="big-view-project-list-dark">{bigProjectArrDark}</ul>
       <img
         id="project-big-button"
-        src={bigger}
+        src={small}
         onClick={() => setSize("small")}
       ></img>
     </div>
