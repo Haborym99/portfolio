@@ -63,6 +63,9 @@ export default function List(props) {
   }
   const smallView = (
     <div id="project-div">
+      <h2 style={{ textAlign: "center", top: "0px", margin: "0px" }}>
+        Projects:
+      </h2>
       <ul id="project-array-background">{projectArr}</ul>
       <img
         id="next-page-list"
@@ -87,6 +90,9 @@ export default function List(props) {
 
   const smallDarkView = (
     <div id="project-div-dark">
+      <h2 style={{ textAlign: "center", top: "0px", margin: "0px" }}>
+        Projects:
+      </h2>
       <ul id="project-array-background">{projectArrDark}</ul>
       <img
         id="next-page-list"
@@ -117,17 +123,19 @@ export default function List(props) {
         id="project-big-button"
         src={small}
         onClick={() => setSize("small")}
+        alt="reduce the size"
       ></img>
     </div>
   );
   const bigViewDark = (
     <div id="big-view-project-dark" className="slide-left">
-      <h2>Here's all the project I made:</h2>
+      <h2>Here's all the projects I made:</h2>
       <ul id="big-view-project-list-dark">{bigProjectArrDark}</ul>
       <img
         id="project-big-button"
         src={small}
         onClick={() => setSize("small")}
+        alt="reduce the size"
       ></img>
     </div>
   );

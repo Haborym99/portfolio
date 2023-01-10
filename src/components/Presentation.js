@@ -311,7 +311,7 @@ export default function Presentation(props) {
         </p>
         <h2>Any degree?</h2>
         <p>
-          A bachelor degree plus, certifications for web development and
+          A high school diploma plus, certifications for web development and
           frontend development from freeCodeCamp, each of them asked about
           approximately 300h or more.
           <br />
@@ -506,7 +506,7 @@ export default function Presentation(props) {
         </p>
         <h2>Any degree?</h2>
         <p>
-          A bachelor degree plus, certifications for web development and
+          A high school diploma plus, certifications for web development and
           frontend development from freeCodeCamp, each of them asked about
           approximately 300h or more.
           <br />
