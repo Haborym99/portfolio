@@ -309,7 +309,7 @@ export default function Presentation(props) {
           In addition to technology, I also love taking photos, playing video
           games, travelling, listening to music, running, lifting weight.
         </p>
-        <h2>Any degree?</h2>
+        <h2>Any diploma?</h2>
         <p>
           A high school diploma plus, certifications for web development and
           frontend development from freeCodeCamp, each of them asked about
@@ -504,7 +504,7 @@ export default function Presentation(props) {
           In addition to technology, I also love taking photos, playing video
           games, travelling, listening to music, running, lifting weight.
         </p>
-        <h2>Any degree?</h2>
+        <h2>Any diploma?</h2>
         <p>
           A high school diploma plus, certifications for web development and
           frontend development from freeCodeCamp, each of them asked about
