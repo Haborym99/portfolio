@@ -144,7 +144,6 @@ export default function Presentation(props) {
       <p
         style={{
           position: "absolute",
-          top: "100%",
           left: "0%",
           right: "0%",
         }}
@@ -286,7 +285,10 @@ export default function Presentation(props) {
         onClick={() => setSize("big")}
         alt="increase presentation window"
       ></img>
-      <p style={{ position: "absolute", top: "100%", left: "0%", right: "0%" }}>
+      <p
+        id="copy"
+        style={{ position: "absolute", top: "100%", left: "0%", right: "0%" }}
+      >
         &copy; Tristan Collon
       </p>
     </div>
@@ -356,7 +358,7 @@ export default function Presentation(props) {
               <li>Algorithm logic</li>
               <li>Array manipulation</li>
               <li>Object manipulation</li>
-              <li>Functionnal programation</li>
+              <li>Functionnal programming</li>
               <li>ES6</li>
             </ul>
           </div>
@@ -387,7 +389,6 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
-          <li>Node.js</li>
           <li>Figma</li>
           <li>Notion</li>
         </ul>
@@ -551,7 +552,7 @@ export default function Presentation(props) {
               <li>Algorithm logic</li>
               <li>Array manipulation</li>
               <li>Object manipulation</li>
-              <li>Functionnal programation</li>
+              <li>Functionnal programming</li>
               <li>ES6</li>
             </ul>
           </div>
@@ -582,7 +583,6 @@ export default function Presentation(props) {
           <li>HTML/CSS</li>
           <li>JavaScript</li>
           <li>React.js</li>
-          <li>Node.js</li>
           <li>Figma</li>
           <li>Notion</li>
         </ul>
