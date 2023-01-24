@@ -287,7 +287,11 @@ export default function Presentation(props) {
       ></img>
       <p
         id="copy"
-        style={{ position: "absolute", top: "100%", left: "0%", right: "0%" }}
+        style={{
+          position: "absolute",
+          left: "0%",
+          right: "0%",
+        }}
       >
         &copy; Tristan Collon
       </p>
