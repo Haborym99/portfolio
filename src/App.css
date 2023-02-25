@@ -270,7 +270,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  border: none;
+  border: 2px solid gray;
 }
 ul {
   list-style: none;
